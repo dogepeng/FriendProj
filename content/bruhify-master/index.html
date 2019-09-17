@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bruhify!</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+<div class="container py-4" id="app">
+    <div class="d-flex justify-content-end mb-2">
+        <form class="form-inline" @submit.prevent="redeem">
+            <label for="promo" class="mr-sm-2">Promo Code:</label>
+            <input class="form-control mb-2 mr-sm-2" id="promo" v-model="promo">
+            <button type="submit" class="btn btn-primary mb-2">Redeem!</button>
+        </form>
+    </div>
+    <div class="d-flex justify-content-between">
+        <h1>Bruhify!</h1>
+        <div class="align-content-center justify-content-center">
+            <p>Multiplier: x{{ multiplier }}</p>
+            <button :class="'btn ' + (bruhs >= upgrade.costs[upgrade.i] ? 'btn-success' : 'btn-danger')"
+                    title="Ur broke" data-toggle="popover"
+                    data-trigger="manual" data-content="Ur too broke to buy this. Try getting some bruhs."
+                    id="upgrade_btn" @click="upgrade_func">
+                Upgrade ({{ upgrade.costs[upgrade.i] ? upgrade.costs[upgrade.i] : 'max' }})
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <!--suppress RequiredAttributes -->
+            <img :src="'assets/' + bruh_img" alt="Bruh Me" class="d-inline inline-image" @click="bruh">
+        </div>
+        <div class="col-7">
+            <div class="row">
+                <p class="h2">Bruhs: {{ Math.floor(bruhs) }}</p>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <h2>Idle Bruhes Shop</h2>
+                <div class="overflow-y-scroll" id="idle_bruhes_shop">
+                    <div class="card" v-for="idle_bruh, name in idle_bruhes_shop">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ idle_bruh.title }}</h4>
+                            <div class="row">
+                                <div class="col-10">
+                                    <p class="pb-2 border-bottom">{{ idle_bruh.description }}</p>
+                                    <p class="pb-2 border-bottom">"<em>{{ idle_bruh.quote }}</em>"</p>
+                                    <span class="d-inline font-weight-bold">{{ idle_bruh.bps }} b/sec. Owned: {{ idle_bruh.owned }}</span>
+                                </div>
+                                <div class="col-2">
+                                    <button
+                                        :class="'btn float-right ' + (bruhs >= idle_bruh.cost ? 'btn-success' : 'btn-danger disabled')"
+                                        @click="buy(name)">
+                                        Buy ({{ idle_bruh.cost }})
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+
+</html>
