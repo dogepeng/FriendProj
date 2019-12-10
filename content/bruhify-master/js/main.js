@@ -25,7 +25,8 @@ const app = new Vue({
             promos: {
                 barrel_maker: false,
                 bruh: false,
-                aut0: false
+                aut0: false,
+                cheatcode: false
             }
         },
         upgrade: {
@@ -130,6 +131,9 @@ const app = new Vue({
                 this.multiplier += 3;
             } else if (promo_code('aut0')) {
                 setInterval(this.bruh, 750)
+            } else if (promo_code('cheatcode')) {
+                this.bruhs += 20000;
+                this.multiplier += 10;
             } else {
                 $('#promo').addClass('border-danger');
             }
