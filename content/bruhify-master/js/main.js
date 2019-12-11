@@ -31,102 +31,12 @@ const app = new Vue({
         },
         upgrade: {
             i: 0,
+            costs: [100, 250, 500, 1000, 1750, 2500, 5000, 7500, 10000, false]
             costs: [100, 250, 500, 1000, 1750, 2500, 5000, 7500, 10000, 50000, 100000, 200000, 300000, 400000, 500000,false]
         },
         timeouts: {
             troll_img: false,
-            upgrade_popover: false
-        },
-        idle_bruhes_worker: new Worker('js/idle_bruhes.js'),
-        idle_bruhes_shop: {
-            caveman: {
-                bps: 0.05,
-                title: 'Caveman',
-                description: 'Lived before time was recorded. Barely knew English.',
-                quote: 'Ooga Booga?',
-                cost: 10,
-                cost_add: 5,
-                owned: 0
-            },
-            grandpa: {
-                bps: 0.1,
-                title: 'Retro 1980s Grandpa',
-                description: 'Lived in the stone age. Doesn\'t know slang. Took 4 hours to teach him how to bruh.',
-                quote: 'Back in the day, we didn\'t have fancy electronics. We played Pong on huge arcade cabinets. By the way, I was the king of Pong.',
-                cost: 100,
-                cost_add: 10,
-                owned: 0
-            },
-            cool_face: {
-                bps: 0.25,
-                title: 'Cool face (▀̿Ĺ̯▀̿ ̿)',
-                description: 'Mr. Cool Face. Thinks he\'s better than everyone else because he hangs out with the other cool faces.',
-                quote: '2 Cool 4 U',
-                cost: 250,
-                cost_add: 15,
-                owned: 0
-            },
-            money_face: {
-                bps: 1,
-                title: 'Money face ($ʖ$)',
-                description: 'Mr. Money. Takes showers in money. And baths. A morph between Lenny face and Dollar bill. Made in a lab.',
-                quote: 'Show me da money!',
-                cost: 500,
-                cost_add: 25,
-                owned: 0
-            },
-            ultimate_bruh: {
-                bps: 2,
-                title: 'Ultimate Bruh Moment (¬_¬)',
-                description: 'The Ultimate Bruh Moment. Occurs once per millenia first found in the year 1782.',
-                quotes: 'BRUH',
-                cost: 1000,
-                cost_add: 100,
-                owned: 0
-            }
-        }
-    },
-    methods: {
-        bruh: function () {
-            this.bruhs += this.multiplier;
-            // noinspection JSUnusedGlobalSymbols
-            this.bruh_img = 'stickfigurewithtrollface.png';
-            if (this.timeouts.troll_img) {
-                clearTimeout(this.timeouts.troll_img);
-            }
-            if (!this.bruh_sound.playing) {
-                this.bruh_sound.object.play();
-                this.bruh_sound.playing = true;
-                this.bruh_sound.object.onended = function () {
-                    app.bruh_sound.playing = false;
-                    app.bruh_sound.object.currentTime = 0;
-                }
-            }
-            this.timeouts.troll_img = setTimeout(function () {
-                app.bruh_img = 'stickfigure.png';
-                app.timeouts.troll_img = false;
-            }, 250);
-            this.tick();
-        },
-        upgrade_func: function () {
-            let cost = this.upgrade.costs[this.upgrade.i];
-            if (cost) {
-                if (this.bruhs >= cost) {
-                    this.bruhs -= cost;
-                    this.multiplier++;
-                    this.upgrade.i++;
-                } else {
-                    $('#upgrade_btn').popover('show');
-                    if (this.timeouts.upgrade_popover) {
-                        clearTimeout(this.timeouts.upgrade_popover);
-                    }
-                    setTimeout(function () {
-                        $('#upgrade_btn').popover('hide');
-                        app.timeouts.upgrade_popover = false;
-                    }, 1000);
-                }
-            }
-        },
+@@ -121,6 +121,8 @@ const app = new Vue({
         tick: function () {
             if (this.bruhs >= 4500 && cache('aut0')) {
                 alert('promo code: aut0');
@@ -170,7 +80,6 @@ function promo_code(code) {
     }
     return false;
 }
-
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
