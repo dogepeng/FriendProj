@@ -31,7 +31,7 @@ const app = new Vue({
         },
         upgrade: {
             i: 0,
-            costs: [100, 250, 500, 1000, 1750, 2500, 5000, 7500, 10000, false]
+            costs: [100, 250, 500, 1000, 1750, 2500, 5000, 7500, 10000, 50000, 100000, 200000, 300000, 400000, 500000,false]
         },
         timeouts: {
             troll_img: false,
@@ -121,6 +121,8 @@ const app = new Vue({
         tick: function () {
             if (this.bruhs >= 4500 && cache('aut0')) {
                 alert('promo code: aut0');
+            if (this.bruhs >= 100000000000000000) {
+                alert('Well, this is a bruh moment......... you used up all of your time for what? Pls donate tho');
             }
         },
         redeem: function () {
