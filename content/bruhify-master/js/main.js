@@ -83,7 +83,7 @@ const app = new Vue({
                 cost: 1000,
                 cost_add: 100,
                 owned: 0
-            },
+            }
         }
     },
     methods: {
