@@ -74,7 +74,16 @@ const app = new Vue({
                 cost: 500,
                 cost_add: 25,
                 owned: 0
-            }
+            },
+            ultimate_bruh: {
+                bps: 2,
+                title: 'Ultimate Bruh Moment (¬_¬)',
+                description: 'The Ultimate Bruh Moment. Occurs once per millenia first found in the year 1782.',
+                quotes: 'BRUH',
+                cost: 1000,
+                cost_add: 100,
+                owned: 0
+            },
         }
     },
     methods: {
