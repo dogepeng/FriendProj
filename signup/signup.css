@@ -1,0 +1,33 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+body {font-family: 'montserrat';}
+*{box-sizing: border-box}
+input[type=text], input[type=password], input[type=type] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 25px 0 ;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=type]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+button {
+float: left;
+width: 50%;
+height: 20px;
+padding: 90px 45px;
+margin: 8px 0;
+cursor: pointer;
+color: black;
+font-family: 'montserrat';
+font-size: 3em;
+opacity: 0.9;
+background-color: #4aff9e;
+border: none;
+outline: none;
+}
+.quit {
+background-color: #ff5252;
+}
