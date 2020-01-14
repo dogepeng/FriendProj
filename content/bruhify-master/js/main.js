@@ -122,6 +122,9 @@ const app = new Vue({
             if (this.bruhs >= 5000 && !this.cache.promos.aut0 && cache('aut0')) {
                 alert('promo code: aut0');
             }
+            else if (this.multiplier >= 20 && this.bruhs >= 100000) {
+                alert('promo code: algebruh moment');
+            }
             
         },
         redeem: function () {
@@ -136,8 +139,6 @@ const app = new Vue({
                 this.multiplier += 10;
             } else if (promo_code('algebruh moment')) {
                 this.bruhs += 1000 this.multiplier += 5;
-            } else if (this.multiplier >= 20 && this.bruhs >= 100000) {
-                alert('promo code: algebruh moment');
             } else {
                 $('#promo').addClass('border-danger');
             }
