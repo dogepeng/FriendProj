@@ -138,7 +138,7 @@ const app = new Vue({
             } else if (promo_code('faideye')) {
                 this.multiplier += 10;
             } else if (promo_code('algebruh moment')) {
-                this.bruhs += 1000 this.multiplier += 5;
+                this.multiplier += 15;
             } else {
                 $('#promo').addClass('border-danger');
             }
