@@ -26,7 +26,8 @@ const app = new Vue({
                 barrel_maker: false,
                 bruh: false,
                 aut0: false,
-                faideye: false
+                faideye: false,
+                algebruh_moment: false
             }
         },
         upgrade: {
