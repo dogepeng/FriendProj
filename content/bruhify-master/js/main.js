@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     // init popovers
     $('[data-toggle="popover"]').popover();
@@ -26,9 +27,9 @@ const app = new Vue({
                 barrel_maker: false,
                 bruh: false,
                 aut0: false,
+                faideye: false
                 faideye: false,
-                algebruh_moment: false,
-                L1g5!: false
+                algebruh_moment: false
             }
         },
         upgrade: {
@@ -124,7 +125,7 @@ const app = new Vue({
             if (this.bruhs >= 5000 && !this.cache.promos.aut0 && cache('aut0')) {
                 alert('promo code: aut0');
             }
-            else if (this.multiplier == 20 && this.bruhs >= 100000) {
+            else if (this.multiplier >= 20 && this.bruhs >= 100000) {
                 alert('promo code: algebruh moment');
             }
             
@@ -141,8 +142,6 @@ const app = new Vue({
                 this.multiplier += 10;
             } else if (promo_code('algebruh moment')) {
                 this.multiplier += 15;
-            } else if (promo_code('L1g5!')) {
-                this.bruhs += 20000 this.multiplier += 20 {
             } else {
                 $('#promo').addClass('border-danger');
             }
@@ -168,7 +167,6 @@ function promo_code(code) {
     }
     return false;
 }
-
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
