@@ -125,7 +125,7 @@ const app = new Vue({
             if (this.bruhs >= 5000 && !this.cache.promos.aut0 && cache('aut0')) {
                 alert('promo code: aut0');
             }
-            else if (this.multiplier >= 20 && this.bruhs >= 100000) {
+            else if (this.multiplier == 20 && this.bruhs == 100000) {
                 alert('promo code: algebruh moment');
             }
             
