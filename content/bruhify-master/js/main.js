@@ -27,7 +27,6 @@ const app = new Vue({
                 barrel_maker: false,
                 bruh: false,
                 aut0: false,
-                faideye: false
                 faideye: false,
                 algebruh_moment: false
             }
@@ -125,7 +124,7 @@ const app = new Vue({
             if (this.bruhs >= 5000 && !this.cache.promos.aut0 && cache('aut0')) {
                 alert('promo code: aut0');
             }
-            else if (this.multiplier == 20 && this.bruhs == 100000) {
+            else if (this.multiplier == 30) {
                 alert('promo code: algebruh moment');
             }
             
@@ -141,6 +140,7 @@ const app = new Vue({
             } else if (promo_code('faideye')) {
                 this.multiplier += 10;
             } else if (promo_code('algebruh moment')) {
+                this.bruhs += 1000 this.multiplier += 5;
                 this.multiplier += 15;
             } else {
                 $('#promo').addClass('border-danger');
