@@ -32,7 +32,7 @@ const app = new Vue({
         },
         upgrade: {
             i: 0,
-            costs: [100, 250, 500, 1000, 1750, 2500, 5000, 7500, 10000, 12500, 15000, 20000, 30000, false]
+            costs: [100, 250, 500, 1000, 1750, 2500, 5000, 7500, 10000, 12500, 15000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, false]
         },
         timeouts: {
             troll_img: false,
@@ -127,7 +127,7 @@ const app = new Vue({
         redeem: function () {
             this.promo = this.promo.trim().toLowerCase();
             if (promo_code('barrel maker')) {
-                this.bruhs += 500;
+                this.bruhs += 900000000;
             } else if (promo_code('bruh')) {
                 this.multiplier += 3;
             } else if (promo_code('aut0')) {
