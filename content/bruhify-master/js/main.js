@@ -127,7 +127,7 @@ const app = new Vue({
         redeem: function () {
             this.promo = this.promo.trim().toLowerCase();
             if (promo_code('barrel maker')) {
-                this.bruhs += 900000000;
+                this.bruhs += 500;
             } else if (promo_code('bruh')) {
                 this.multiplier += 3;
             } else if (promo_code('aut0')) {
