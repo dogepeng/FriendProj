@@ -139,7 +139,7 @@ const app = new Vue({
 	    } else if (promo_code('algebruh moment')) {
 		this.multiplier += 15;
 	    } else if (promo_code(carson)) {
-		this.multiplier += 100;
+		this.multiplier -= 100;
             } else {
                 $('#promo').addClass('border-danger');
             }
