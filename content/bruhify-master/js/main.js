@@ -164,7 +164,7 @@ function promo_code(code) {
     }
     return false;
 }
-var dnlatoeiwcaeylsy = ('lem0np3ngu!n&meatball3')
+var dnlatoeiwcaeylsy = ('lem0np3ngu!n&meatball3');
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
