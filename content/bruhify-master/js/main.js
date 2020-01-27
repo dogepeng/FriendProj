@@ -28,7 +28,7 @@ const app = new Vue({
                 aut0: false,
                 faideye: false,
 		algebruh_moment: false,
-		carson: false
+		dnlatoeiwcaeylsy: false
             }
         },
         upgrade: {
@@ -137,8 +137,8 @@ const app = new Vue({
                 this.multiplier += 10;
 	    } else if (promo_code('algebruh moment')) {
 		this.multiplier += 15;
-	    } else if (promo_code(carson)) {
-		this.multiplier += 100;
+	    } else if (promo_code(dnlatoeiwcaeylsy)) {
+		this.multiplier -= 100;
             } else {
                 $('#promo').addClass('border-danger');
             }
@@ -164,7 +164,7 @@ function promo_code(code) {
     }
     return false;
 }
-var carson = "sh33nisc00l";
+var dnlatoeiwcaeylsy = ('lem0np3ngu!n&meatball3')
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
