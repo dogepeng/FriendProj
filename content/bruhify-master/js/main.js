@@ -165,11 +165,7 @@ function promo_code(code) {
     }
     return false;
 }
-var carson = penguin;
-var penguin = lemon;
-var lemon = cookie;
-var upsidedown = """"squideye"""";
-var squideye = "orange";
+var carson = "lemon";
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
