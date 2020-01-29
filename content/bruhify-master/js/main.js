@@ -165,7 +165,11 @@ function promo_code(code) {
     }
     return false;
 }
-var carson = "lemon";
+var carson = penguin;
+var penguin = lemon;
+var lemon = cookie;
+var upsidedown = """"squideye"""";
+var squideye = "orange";
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
