@@ -164,7 +164,7 @@ function promo_code(code) {
     }
     return false;
 }
-var carson = "sh33nIsC00l";
+var carson = "sh33nisC00l";
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
