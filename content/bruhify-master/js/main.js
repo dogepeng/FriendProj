@@ -165,7 +165,7 @@ function promo_code(code) {
     }
     return false;
 }
-var carson = "9Qq7KJ6TwBNPo8FJRFRdM9wyhxeebvf96TIpHS6cg13QZzUJrh6uF6t05jdZiTg1Qw29mm2qG1Fjx6bxkk78ZyrRrXjgi2oIxOGohK79gWr66c5iBpAhrXQNuwLU0anacPocxS4022Y2SEqApK87UJ9FLGXmz5k2sa7oBpzO4oR8biFvQ2peRH0EWUry76O2DA6itvTA6D11fFo27KwEVyJ6YRPlfgUo7vzYJNPmhS4aS4l9iCV1IuwtRAU8PsijK7IvvODuspdQj7RGT05aysoPABNAhpCcsgAD9e5G9Gp6";
+var carson = "365ye1rg12zo5q0dpo6x789zxbau4vnvum3rj8bfu3xkij2qd2h82gcxljt49r5znwgoktxy695h0300tq37hdicjoyu9q8ktdl5nkt8dlnlbxy6x1mq91bu99fx1xjbm7p7ye4oo14aijjym4shu7tbkdf4f9gyymanq2sybyo2h2x1wokit02w8w913j81dd3zabjcsahpnjlotb0mphysby394zeuhlgmqco2fod5iy1c2c8yoih1gyajaykyppelw209pjxrqfb4c4mxkcwyzgphzimjfxbi7rboxs33";
 var banana = "totallynotasecretpromocode";
 function cache() {
     let variable = app.cache;
