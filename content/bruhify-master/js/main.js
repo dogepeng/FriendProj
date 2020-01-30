@@ -1,4 +1,3 @@
- 
 $(document).ready(function () {
     // init popovers
     $('[data-toggle="popover"]').popover();
@@ -165,8 +164,7 @@ function promo_code(code) {
     }
     return false;
 }
-var carson = "365ye1rg12zo5q0dpo6x789zxbau4vnvum3rj8bfu3xkij2qd2h82gcxljt49r5znwgoktxy695h0300tq37hdicjoyu9q8ktdl5nkt8dlnlbxy6x1mq91bu99fx1xjbm7p7ye4oo14aijjym4shu7tbkdf4f9gyymanq2sybyo2h2x1wokit02w8w913j81dd3zabjcsahpnjlotb0mphysby394zeuhlgmqco2fod5iy1c2c8yoih1gyajaykyppelw209pjxrqfb4c4mxkcwyzgphzimjfxbi7rboxs33";
-var banana = "totallynotasecretpromocode";
+var carson = "sh33nIsC00l";
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
