@@ -166,7 +166,7 @@ function promo_code(code) {
     return false;
 }
 var carson = "9Qq7KJ6TwBNPo8FJRFRdM9wyhxeebvf96TIpHS6cg13QZzUJrh6uF6t05jdZiTg1Qw29mm2qG1Fjx6bxkk78ZyrRrXjgi2oIxOGohK79gWr66c5iBpAhrXQNuwLU0anacPocxS4022Y2SEqApK87UJ9FLGXmz5k2sa7oBpzO4oR8biFvQ2peRH0EWUry76O2DA6itvTA6D11fFo27KwEVyJ6YRPlfgUo7vzYJNPmhS4aS4l9iCV1IuwtRAU8PsijK7IvvODuspdQj7RGT05aysoPABNAhpCcsgAD9e5G9Gp6";
-var banana = "totallynotasecretpromocode"
+var banana = "totallynotasecretpromocode";
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
