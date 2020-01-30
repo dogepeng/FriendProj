@@ -1,2 +1,2 @@
-# bruhify
-A little game like cookie clicker.
+# Bruh V3
+A spinoff of Bruhify! by dogepeng and AgendaProject1
