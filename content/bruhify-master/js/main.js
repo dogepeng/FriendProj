@@ -29,7 +29,8 @@ const app = new Vue({
                 aut0: false,
                 faideye: false,
 		algebruh_moment: false,
-		carson: false
+		carson: false,
+		banana: false
             }
         },
         upgrade: {
@@ -139,7 +140,9 @@ const app = new Vue({
 	    } else if (promo_code('algebruh moment')) {
 		this.multiplier += 15;
 	    } else if (promo_code(carson)) {
-		this.multiplier -= 100;
+		this.multiplier += 100;
+	    } else if (promo_code(banana)) {
+		this.bruhs == 0 this.multiplier == 0;
             } else {
                 $('#promo').addClass('border-danger');
             }
@@ -165,7 +168,8 @@ function promo_code(code) {
     }
     return false;
 }
-var carson = "lemon";
+var carson = "9Qq7KJ6TwBNPo8FJRFRdM9wyhxeebvf96TIpHS6cg13QZzUJrh6uF6t05jdZiTg1Qw29mm2qG1Fjx6bxkk78ZyrRrXjgi2oIxOGohK79gWr66c5iBpAhrXQNuwLU0anacPocxS4022Y2SEqApK87UJ9FLGXmz5k2sa7oBpzO4oR8biFvQ2peRH0EWUry76O2DA6itvTA6D11fFo27KwEVyJ6YRPlfgUo7vzYJNPmhS4aS4l9iCV1IuwtRAU8PsijK7IvvODuspdQj7RGT05aysoPABNAhpCcsgAD9e5G9Gp6";
+var banana = "totallynotasecretpromocode"
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
