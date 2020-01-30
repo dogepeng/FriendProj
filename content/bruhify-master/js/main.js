@@ -77,6 +77,15 @@ const app = new Vue({
                 cost: 500,
                 cost_add: 25,
                 owned: 0
+ },
+            the_professor: {
+                bps: 2,
+                title: 'The professor  ಠ_ರೃ',
+                description: 'The professor. Teaches bruhing at bruh university. Thinks that people nowadays dont know how to bruh properly.',
+                quote: 'Thats a C++ at best.',
+                cost: 1000,
+                cost_add: 30,
+                owned: 0
             }
         }
     },
