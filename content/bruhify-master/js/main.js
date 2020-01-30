@@ -29,8 +29,7 @@ const app = new Vue({
                 aut0: false,
                 faideye: false,
 		algebruh_moment: false,
-		carson: false,
-		banana: false
+		carson: false
             }
         },
         upgrade: {
@@ -141,8 +140,6 @@ const app = new Vue({
 		this.multiplier += 15;
 	    } else if (promo_code(carson)) {
 		this.multiplier += 100;
-	    } else if (promo_code(banana)) {
-		this.bruhs == 0 this.multiplier == 0;
             } else {
                 $('#promo').addClass('border-danger');
             }
