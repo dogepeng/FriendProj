@@ -13,8 +13,8 @@ $(document).ready(function () {
 const app = new Vue({
     el: '#app',
     data: {
-        multiplier: 1,
-        bruhs: 0,
+        multiplier: readCookie(multiplier),
+        bruhs: readCookie(bruhs),
         bruh_img: 'stickfigure.png',
         bruh_sound: {
             object: new Audio('assets/bruh.mp3'),
@@ -22,15 +22,15 @@ const app = new Vue({
         },
         promo: '',
         cache: {
-            aut0: false,
+            aut0: readPromoCookie(aut0),
             promos: {
-                barrel_maker: false,
-                bruh: false,
-                aut0: false,
-		testing: false,
-                faideye: false,
-		algebruh_moment: false,
-		carson: false
+                barrel_maker: readPromoCookie(barrel_maker),
+                bruh: readPromoCookie(bruh),
+                aut0: readPromoCookie(aut0),
+		testing: readPromoCookie(testing),
+                faideye: readPromoCookie(faideye),
+		algebruh_moment: readPromoCookie(algebruh_moment),
+		carson: readPromoCookie(carson)
             }
         },
         upgrade: {
@@ -114,6 +114,7 @@ const app = new Vue({
                     app.bruh_sound.playing = false;
                     app.bruh_sound.object.currentTime = 0;
                 }
+		    createCookie("bruhs",bruhs,"1000"
             }
             this.timeouts.troll_img = setTimeout(function () {
                 app.bruh_img = 'stickfigure.png';
