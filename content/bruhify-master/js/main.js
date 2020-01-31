@@ -27,10 +27,10 @@ const app = new Vue({
                 barrel_maker: false,
                 bruh: false,
                 aut0: false,
+		testing: false,
                 faideye: false,
 		algebruh_moment: false,
 		carson: false
-		testing: false
             }
         },
         upgrade: {
