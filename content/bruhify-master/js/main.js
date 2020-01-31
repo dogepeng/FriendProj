@@ -144,7 +144,7 @@ const app = new Vue({
                 this.multiplier += 3;
             } else if (promo_code('aut0')) {
                 setInterval(this.bruh, 750)
-		      } else if (promo_code('testing')) {
+	    } else if (promo_code('testing')) {
                 this.bruhs += 10000;
             } else if (promo_code('faideye')) {
                 this.multiplier += 10;
