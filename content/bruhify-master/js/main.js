@@ -87,6 +87,15 @@ const app = new Vue({
                 cost: 1000,
                 cost_add: 30,
                 owned: 0
+		     },
+            girl_scout: {
+                bps: 4,
+                title: 'The girl scout (◕‿◕)',
+                description: 'The top girl scout in the ASCII nation. Sells 4 bruh flavored cookies every second. Likes potatos.',
+                quote: 'Would you like some cookies?',
+                cost: 2500,
+                cost_add: 40,
+                owned: 0
             }
         }
     },
