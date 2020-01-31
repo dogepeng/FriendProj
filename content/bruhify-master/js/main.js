@@ -114,7 +114,7 @@ const app = new Vue({
                     app.bruh_sound.playing = false;
                     app.bruh_sound.object.currentTime = 0;
                 }
-		    createCookie("bruhs",1,1000)
+		    createCookie(bruhs,1,1000)
             }
             this.timeouts.troll_img = setTimeout(function () {
                 app.bruh_img = 'stickfigure.png';
