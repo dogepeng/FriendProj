@@ -96,7 +96,14 @@ const app = new Vue({
                 cost: 2500,
                 cost_add: 40,
                 owned: 0
-            }
+		          },
+	    bruh_moment: {
+                bps: 5,
+                title: 'Bruh Moment',
+                description: 'Bruh Moment. Five happen every second on Earth.',
+                quote: 'BRUH',
+                cost: 3000,
+                cost_add: 100,
         }
     },
     methods: {
