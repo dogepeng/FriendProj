@@ -106,7 +106,7 @@ const app = new Vue({
                 cost_add: 100,
         }
     },
-    methods: {
+methods: {
         bruh: function () {
             this.bruhs += this.multiplier;
             // noinspection JSUnusedGlobalSymbols
@@ -121,7 +121,6 @@ const app = new Vue({
                     app.bruh_sound.playing = false;
                     app.bruh_sound.object.currentTime = 0;
                 }
-		    createCookie(bruhs,1,1000)
             }
             this.timeouts.troll_img = setTimeout(function () {
                 app.bruh_img = 'stickfigure.png';
@@ -161,14 +160,12 @@ const app = new Vue({
                 this.multiplier += 3;
             } else if (promo_code('aut0')) {
                 setInterval(this.bruh, 750)
-	    } else if (promo_code('testing')) {
-                this.bruhs += 10000;
             } else if (promo_code('faideye')) {
                 this.multiplier += 10;
 	    } else if (promo_code('algebruh moment')) {
 		this.multiplier += 15;
 	    } else if (promo_code('jr7tnuycex5gto6udk78juyqzy32lms2rs7uduecdzk9i88kl3zx95kbj8hk4aqx4dj72xr2ezrirgwhlw5nthl59qnvfvo7epvzftuh7zlgo2f44enjbfze0xwmg6qmdewokjgi70r65o5k54dj5gxkc75tqphcaht4nbvm0lcw8djiye2qnmlnoz8zswa4arf09qidpxs9s7ctng6yoe6dd66agy43sxd9nlci1hctuzkkswyefl1663wxp7rk1jshrf04kqgg7ud1fkjakwe0scha643enybc074vojx935vispqlh9692px0tzcheg6s1q92f3ri4unldz2b9yj8igo3a5ki9s7tccjlcqbcj0f1sfjmhvaoje38sg1r91iyaydw9mwetbuw1sc968q0t489hifpnhrdp7fq91a9rfsu6kchpmr75yht1tolvt1qd07ga3f4mmwp6grc3ktojjykle1mihmu4adjglrc2sb884ka6rzs6j9yxd065wbnwx6wyubjomf70hw3ylnuo5qyvvxhhm715qfqbx4d2lhv71za19dwt8rsh')) {
-		this.multiplier -= 100;
+		this.multiplier -= 0;
             } else {
                 $('#promo').addClass('border-danger');
             }
@@ -215,29 +212,3 @@ function cache() {
     return false;
 }
 
-function eraseCookie(name) {
-  createCookie(name,"",-1);
-}
-
-
-function readCookie(name) {
-  var nameEQ = name + "=";
-  var ca = document.cookie.split(';');
-  for(var i=0;i < ca.length;i++) {
-    var c = ca[i];
-    while (c.charAt(0)==' ') c = c.substring(1,c.length);
-    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-  }
-  return 0;
-}
-
-
-function createCookie(name,value,days) {
-  if (days) {
-    var date = new Date();
-    date.setTime(date.getTime()+(days*24*60*60*1000));
-    var expires = "; expires="+date.toGMTString();
-  }
-  else var expires = "";
-  document.cookie = name+"="+value+expires+"; path=/";
-}
