@@ -1,3 +1,4 @@
+
  
 $(document).ready(function () {
     // init popovers
@@ -27,7 +28,6 @@ const app = new Vue({
                 barrel_maker: false,
                 bruh: false,
                 aut0: false,
-		testing: false,
                 faideye: false,
 		algebruh_moment: false,
 		carson: false
@@ -78,35 +78,67 @@ const app = new Vue({
                 cost: 500,
                 cost_add: 25,
                 owned: 0
- },
-            the_professor: {
-                bps: 2,
-                title: 'The professor  ಠ_ರೃ',
-                description: 'The professor. Teaches bruhing at bruh university. Thinks that people nowadays dont know how to bruh properly.',
-                quote: 'Thats a C++ at best.',
-                cost: 1000,
-                cost_add: 30,
-                owned: 0
+            }
+		
+           the_professor: {
+
+
+
+
+               bps: 2,
+
+
+               title: 'The professor  ಠ_ರೃ',
+
+
+               description: 'The professor. Teaches bruhing at bruh university. Thinks that people nowadays dont know how to bruh properly.',
+
+
+               quote: 'Thats a C++ at best.',
+
+
+               cost: 1000,
+
+
+               cost_add: 30,
+
+
+               owned: 0
+
+
 		     },
-            girl_scout: {
-                bps: 4,
-                title: 'The girl scout (◕‿◕)',
-                description: 'The top girl scout in the ASCII nation. Sells 4 bruh flavored cookies every second. Likes potatos.',
-                quote: 'Would you like some cookies?',
-                cost: 2500,
-                cost_add: 40,
-                owned: 0
+
+
+           girl_scout: {
+
+
+               bps: 4,
+
+
+               title: 'The girl scout (◕‿◕)',
+
+
+               description: 'The top girl scout in the ASCII nation. Sells 4 bruh flavored cookies every second. Likes potatos.',
+
+
+               quote: 'Would you like some cookies?',
+
+
+               cost: 2500,
+
+
+               cost_add: 40,
+
+
+               owned: 0
+
+
 		          },
-	    bruh_moment: {
-                bps: 5,
-                title: 'Bruh Moment',
-                description: 'Bruh Moment. Five happen every second on Earth.',
-                quote: 'BRUH',
-                cost: 3000,
-                cost_add: 100,
+
+
         }
     },
-methods: {
+    methods: {
         bruh: function () {
             this.bruhs += this.multiplier;
             // noinspection JSUnusedGlobalSymbols
@@ -164,8 +196,8 @@ methods: {
                 this.multiplier += 10;
 	    } else if (promo_code('algebruh moment')) {
 		this.multiplier += 15;
-	    } else if (promo_code('jr7tnuycex5gto6udk78juyqzy32lms2rs7uduecdzk9i88kl3zx95kbj8hk4aqx4dj72xr2ezrirgwhlw5nthl59qnvfvo7epvzftuh7zlgo2f44enjbfze0xwmg6qmdewokjgi70r65o5k54dj5gxkc75tqphcaht4nbvm0lcw8djiye2qnmlnoz8zswa4arf09qidpxs9s7ctng6yoe6dd66agy43sxd9nlci1hctuzkkswyefl1663wxp7rk1jshrf04kqgg7ud1fkjakwe0scha643enybc074vojx935vispqlh9692px0tzcheg6s1q92f3ri4unldz2b9yj8igo3a5ki9s7tccjlcqbcj0f1sfjmhvaoje38sg1r91iyaydw9mwetbuw1sc968q0t489hifpnhrdp7fq91a9rfsu6kchpmr75yht1tolvt1qd07ga3f4mmwp6grc3ktojjykle1mihmu4adjglrc2sb884ka6rzs6j9yxd065wbnwx6wyubjomf70hw3ylnuo5qyvvxhhm715qfqbx4d2lhv71za19dwt8rsh')) {
-		this.multiplier -= 0;
+	    } else if (promo_code(carson)) {
+		this.multiplier -= 100;
             } else {
                 $('#promo').addClass('border-danger');
             }
@@ -191,6 +223,7 @@ function promo_code(code) {
     }
     return false;
 }
+var carson = "lemon";
 function cache() {
     let variable = app.cache;
     let hierarchy = [app.cache];
@@ -211,4 +244,3 @@ function cache() {
     }
     return false;
 }
-
