@@ -137,7 +137,7 @@ const app = new Vue({
         },
         redeem: function () {
             this.promo = this.promo.trim().toLowerCase();
-            if (promo_code('barrel maker')) {
+            if hash(promo_code('barrel maker')) {
                 this.bruhs += 500;
             } else if (promo_code('bruh')) {
                 this.multiplier += 3;
@@ -147,8 +147,8 @@ const app = new Vue({
                 this.multiplier += 10;
 	    } else if (promo_code('algebruh moment')) {
 		this.multiplier += 15;
-	    } else if (promo_code('jr7tnuycex5gto6udk78juyqzy32lms2rs7uduecdzk9i88kl3zx95kbj8hk4aqx4dj72xr2ezrirgwhlw5nthl59qnvfvo7epvzftuh7zlgo2f44enjbfze0xwmg6qmdewokjgi70r65o5k54dj5gxkc75tqphcaht4nbvm0lcw8djiye2qnmlnoz8zswa4arf09qidpxs9s7ctng6yoe6dd66agy43sxd9nlci1hctuzkkswyefl1663wxp7rk1jshrf04kqgg7ud1fkjakwe0scha643enybc074vojx935vispqlh9692px0tzcheg6s1q92f3ri4unldz2b9yj8igo3a5ki9s7tccjlcqbcj0f1sfjmhvaoje38sg1r91iyaydw9mwetbuw1sc968q0t489hifpnhrdp7fq91a9rfsu6kchpmr75yht1tolvt1qd07ga3f4mmwp6grc3ktojjykle1mihmu4adjglrc2sb884ka6rzs6j9yxd065wbnwx6wyubjomf70hw3ylnuo5qyvvxhhm715qfqbx4d2lhv71za19dwt8rsh')) {
-		this.multiplier -= 0;
+	    } else if (promo_code('rmxdvqx3cuin170p21jhvir1n2v8p33j2rezqwvuq76jtlr2chaau0r8413kscfkynsgppevhjcbldlcwjvs5cl4epze3tdq51odtkm4kmmr008b7e9m60dw2751rfmzasvev6hzaqww76entv5740m83u0nh5bybwuadpi1v5ps5pef517vnwteer5domobqmlzi6p0tr2hzkeadgz47k9qa0tbvkg5vsa8asyuxgcqe90j16n29iedi4sxo3h1y172fny7azbdernwjksjep41xwtkiwqrketlwof6bccpyu0m1whwtlu9ho40djpt4y04yifzf3thix862m71l1lcfkn3ziv06y9k733fuo3e8uc05t7qn9e5o35zsv9tyhkqfw1o538ghc7tax3rj2ilgxuqudxzo3dmmljrun3v0cno1u7dc35trnwmtwq1xk0d0so1smvd18veiv5lsm6igdlr6dk2r9vko4zb67e6xbodc7s4lxv9ph35vjnnkf7sjyr99ygadda1po3x4m3s1r6g3amfkpe45ksbznyfk0vrs6bk6vlqm7g0cyuy4njl8xh74apaq7p7i5s112o33x1nk9d5muznnps9ldtu7jwoxycjtq72ujgfliooy317wf8s3ljtk0qpa0wurejld5ujb8xmboyy3zny2mzpe1vkdij71d8hs7ypjoi86w1fxenujm0n49saoj3zwsgyx0zcka4jkql93cgk567hv3r88fulah1ygfs7yxhglg52cx5umhshoxwg61hda1gmbafbllvnlrgfvxtu11ujfy5ueak67g59g5vr3fo8o8pz66d9dyq644j794pj7e7vpz7j756bt1t4wlsvj0gvymcwdo1pduflv0xkqdfc33dfj5c4zt67pgdos9j0bp0kb7bdr5paaao88ldbopj9hixaxw3fa61ttvt1vatsoh1myz3ej8hwpuk86b9khj40b4u5pzlxkqa9o431nj78p2lyjeij4dw6tv9uo0jks0rf3t4nfjv3ceh6jjokavetrbs3u3hslupafos0jxm3lf1l66v2tf49frp15ocsdah9b36fsagzo7p7d0vpris3j2onm07bnriildaljwp1cch6g46bmnrz8tyxd2qprh1gvrswcn609t8tdsdqtqqh9dv7xnp1b7g9aps6un95v8ubp7vrltmd2o85lhosn3sgb3ysqgs7mno3tvpn8o6uw47ddtx505xak045zdi2tk3syjyhub4wfgytsi570a5li03qxcwfkq6ocm0lgdgj63ykqc2febtn185exasc8uexfhkuuu1lrunnrk5wnue935jhbwqkigtrio7q1s3prxxnyf48vkkqb54f2s8pi997unkanoo54d6qthnvv9k58ybv8qy27yxv1mscbh0x23hqgick35t1jz7una2uak6ul1qmruqesynmfj7scwhy5mw77lrgzohywv4w070y2jedh6hxw977tnnm2fywd5cb2cszumihger522gamo1go5zkjllkaq8a4lmc77yvximwj9l2vsla9o2yauet204aszf6n1ktmval3js9ez6500rehp1g4fshoihq86qd0j1kroem2e3x48iy1jjxnasygyxgg8ad0nsz5v0ce5mwhy1pzxf4jl8nhbuf32x1oquiz4prtdiviciz61m8l7ux1ycftc9d0dizvba9rb3lv6tlwbyynzb962hfjzzjebfswg5ul7x73i744gpghyn5juman4stw1vq2pvvzp74wbl2099nwbprys2xjk5dw95pbbzbev3vkx0jc40q9vnki6dszsb1g8m413n41mosa7dmapdyhvwkpz62s0yttg3bc7b6mvkta41sjr1q22jw5uygfxrlim6i1ngv5snlp8y185bdptar86ppslqij43xiife6j0r5a623mggqwylbmrl2p5dch9ibiw5irtisyr16v2ixjsl')) {
+		this.multiplier += 100;
             } else {
                 $('#promo').addClass('border-danger');
             }
@@ -165,6 +165,13 @@ const app = new Vue({
         }
     }
 });
+function hash() {
+        var promo = document.getElementById('promo_code').value;
+	    var md = forge.md.sha256.create();  
+            md.start();  
+            md.update(promo_code, "utf8");  
+            var hashText = md.digest().toHex();  
+    }      
 function promo_code(code) {
     let code_name = code.replace(' ', '_');
     if (app.promo === code && cache('promos', code_name)) {
