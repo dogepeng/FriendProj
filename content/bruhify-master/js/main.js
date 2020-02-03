@@ -79,63 +79,7 @@ const app = new Vue({
                 cost_add: 25,
                 owned: 0
             }
-		
-           the_professor: {
-
-
-
-
-               bps: 2,
-
-
-               title: 'The professor  ಠ_ರೃ',
-
-
-               description: 'The professor. Teaches bruhing at bruh university. Thinks that people nowadays dont know how to bruh properly.',
-
-
-               quote: 'Thats a C++ at best.',
-
-
-               cost: 1000,
-
-
-               cost_add: 30,
-
-
-               owned: 0
-
-
-		     },
-
-
-           girl_scout: {
-
-
-               bps: 4,
-
-
-               title: 'The girl scout (◕‿◕)',
-
-
-               description: 'The top girl scout in the ASCII nation. Sells 4 bruh flavored cookies every second. Likes potatos.',
-
-
-               quote: 'Would you like some cookies?',
-
-
-               cost: 2500,
-
-
-               cost_add: 40,
-
-
-               owned: 0
-
-
-		          },
-
-
+	
         }
     },
     methods: {
