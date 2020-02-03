@@ -164,16 +164,16 @@ const app = new Vue({
         }
     }
 });
-function hash() {
+hash: function() {
         var promo = document.getElementById('promo_code').value;
 	    var md = forge.md.sha256.create();  
             md.start();  
             md.update(promo_code, "utf8");  
-            var hashText = md.digest().toHex();  
+            var newpromo = md.digest().toHex();  
     }      
-function promo_code(code) {
-    let code_name = code.replace(' ', '_');
-    if (app.promo === code && cache('promos', code_name)) {
+function promo_code(newpromo) {
+    let code_name = newpromo.replace(' ', '_');
+    if (app.promo === newpromo && cache('promos', code_name)) {
         $('#promo').removeClass('border-danger');
         app.promo = '';
         return true;
