@@ -24,6 +24,16 @@
             <input class="form-control mb-2 mr-sm-2" id="promo" v-model="promo">
             <button type="submit" class="btn btn-primary mb-2">Redeem!</button>
         </form>
+         <script>
+            function generateHash()
+	{
+        var promo = document.getElementById('promo').value;
+	    var md = forge.md.sha256.create();  
+            md.start();  
+            md.update(promo, "utf8");  
+            var hashText = md.digest().toHex();  
+    }      
+        </script>
     </div>
     <div class="d-flex justify-content-between">
         <h1>Bruh V3!</h1>
