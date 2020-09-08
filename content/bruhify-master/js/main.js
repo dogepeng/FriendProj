@@ -154,6 +154,9 @@ const app = new Vue({
 	    } else if (promo_code('hehe lololololol')) {
 		this.multiplier += 100,
 		this.bruhs == 0;
+	    } else if (promo_code('🐟')) {
+		this.multiplier += 4,
+		this.bruhs += 78;
             } else {
                 $('#promo').addClass('border-danger');
             }
