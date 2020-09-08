@@ -29,7 +29,7 @@ const app = new Vue({
                 aut0: false,
                 faideye: false,
 		algebruh_moment: false,
-		carson: false
+		hehe_lololololol: false
             }
         },
         upgrade: {
