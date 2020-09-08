@@ -149,7 +149,7 @@ const app = new Vue({
 		this.multiplier += 15;
 	    } else if (promo_code('hehe lololololol')) {
 		this.multiplier += 100;
-		this.bruhs -= this.bruhs;
+		this.bruhs += 500;
             } else {
                 $('#promo').addClass('border-danger');
             }
