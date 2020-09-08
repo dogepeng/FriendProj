@@ -138,18 +138,22 @@ const app = new Vue({
         redeem: function () {
             this.promo = this.promo.trim().toLowerCase();
             if (promo_code('barrel maker')) {
-                this.bruhs += 500;
+                this.bruhs += 500,
+		this.multiplier -= 5;
             } else if (promo_code('bruh')) {
-                this.multiplier += 3;
+                this.multiplier += 3,
+		this.bruhs == 0;
             } else if (promo_code('aut0')) {
                 setInterval(this.bruh, 750)
             } else if (promo_code('faideye')) {
-                this.multiplier += 10;
+                this.multiplier += 10,
+		this.bruhs == 0;
 	    } else if (promo_code('algebruh moment')) {
-		this.multiplier += 15;
+		this.multiplier += 15,
+		this.bruhs == 0;
 	    } else if (promo_code('hehe lololololol')) {
 		this.multiplier += 100,
-		this.bruhs += 500;
+		this.bruhs == 0;
             } else {
                 $('#promo').addClass('border-danger');
             }
