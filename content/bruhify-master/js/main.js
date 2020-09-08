@@ -148,7 +148,7 @@ const app = new Vue({
 	    } else if (promo_code('algebruh moment')) {
 		this.multiplier += 15;
 	    } else if (promo_code('hehe lololololol')) {
-		this.multiplier += 100;
+		this.multiplier += 100,
 		this.bruhs += 500;
             } else {
                 $('#promo').addClass('border-danger');
