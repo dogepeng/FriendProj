@@ -142,18 +142,18 @@ const app = new Vue({
 		this.multiplier -= 5;
             } else if (promo_code('bruh')) {
                 this.multiplier += 3,
-		this.bruhs == 0;
+		this.bruhs *= 0;
             } else if (promo_code('aut0')) {
                 setInterval(this.bruh, 750)
             } else if (promo_code('faideye')) {
                 this.multiplier += 10,
-		this.bruhs == 0;
+		this.bruhs *= 0;
 	    } else if (promo_code('algebruh moment')) {
 		this.multiplier += 15,
-		this.bruhs == 0;
+		this.bruhs *= 0;
 	    } else if (promo_code('hehe lololololol')) {
 		this.multiplier += 100,
-		this.bruhs == 0;
+		this.bruhs *= 0;
 	    } else if (promo_code('🐟')) {
 		this.multiplier += 4,
 		this.bruhs += 78;
