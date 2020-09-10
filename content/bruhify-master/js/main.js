@@ -10,12 +10,14 @@ $(document).ready(function () {
     }
 });
 // noinspection JSUnresolvedFunction
+
+var img = 'stickfigure.png';
 const app = new Vue({
     el: '#app',
     data: {
         multiplier: 1,
         bruhs: 0,
-        bruh_img: 'stickfigure.png',
+        bruh_img: img,
         bruh_sound: {
             object: new Audio('assets/bruh.mp3'),
             playing: false
@@ -106,7 +108,7 @@ const app = new Vue({
                 }
             }
             this.timeouts.troll_img = setTimeout(function () {
-                app.bruh_img = 'stickfigure.png';
+                app.bruh_img = img;
                 app.timeouts.troll_img = false;
             }, 250);
             this.tick();
