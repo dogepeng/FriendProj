@@ -106,7 +106,7 @@ const app = new Vue({
                 }
             }
             this.timeouts.troll_img = setTimeout(function () {
-                app.bruh_img = 'stickfigure.png';
+                app.bruh_img = 'redstick.png';
                 app.timeouts.troll_img = false;
             }, 250);
             this.tick();
