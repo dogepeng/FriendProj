@@ -165,8 +165,8 @@ const app = new Vue({
             this.tick();
         },
 	skin: function () {
-	    if (this.bruhs >= 100) {
-		this.bruh_img = 'redstick.png';
+	    if (this.bruhs >= 50) {
+		var img = 'redstick.png';
 	 }
 	},
         buy: function (name) {
