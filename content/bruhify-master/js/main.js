@@ -15,7 +15,7 @@ const app = new Vue({
     data: {
         multiplier: 1,
         bruhs: 0,
-        bruh_img: 'stickfigure.png',
+        bruh_img: 'redstick.png',
         bruh_sound: {
             object: new Audio('assets/bruh.mp3'),
             playing: false
