@@ -15,7 +15,7 @@ const app = new Vue({
     data: {
         multiplier: 1,
         bruhs: 0,
-        bruh_img: 'redstick.png',
+        bruh_img: 'stickfigure.png',
         bruh_sound: {
             object: new Audio('assets/bruh.mp3'),
             playing: false
@@ -93,7 +93,7 @@ const app = new Vue({
         bruh: function () {
             this.bruhs += this.multiplier;
             // noinspection JSUnusedGlobalSymbols
-            this.bruh_img = 'redtroll.png';
+            this.bruh_img = 'stickfigurewithtrollface.png';
             if (this.timeouts.troll_img) {
                 clearTimeout(this.timeouts.troll_img);
             }
@@ -106,7 +106,7 @@ const app = new Vue({
                 }
             }
             this.timeouts.troll_img = setTimeout(function () {
-                app.bruh_img = 'redstick.png';
+                app.bruh_img = 'stickfigure.png';
                 app.timeouts.troll_img = false;
             }, 250);
             this.tick();
@@ -162,6 +162,11 @@ const app = new Vue({
             }
             this.tick();
         },
+	skin: function () {
+	    if (this.bruhs >= 100) {
+		this.bruh_img = 'redstick.png';
+	 }
+	},
         buy: function (name) {
             let idle_object = this.idle_bruhes_shop[name];
             if (this.bruhs >= idle_object.cost) {
