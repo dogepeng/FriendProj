@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     // init popovers
     $('[data-toggle="popover"]').popover();
@@ -10,14 +9,12 @@ $(document).ready(function () {
     }
 });
 // noinspection JSUnresolvedFunction
-
-var img = 'stickfigure.png';
 const app = new Vue({
     el: '#app',
     data: {
         multiplier: 1,
         bruhs: 0,
-        bruh_img: img,
+        bruh_img: 'stickfigure.png',
         bruh_sound: {
             object: new Audio('assets/bruh.mp3'),
             playing: false
@@ -95,7 +92,7 @@ const app = new Vue({
         bruh: function () {
             this.bruhs += this.multiplier;
             // noinspection JSUnusedGlobalSymbols
-            this.bruh_img = 'redtroll.png';
+            this.bruh_img = 'stickfigurewithtrollface.png';
             if (this.timeouts.troll_img) {
                 clearTimeout(this.timeouts.troll_img);
             }
@@ -108,7 +105,7 @@ const app = new Vue({
                 }
             }
             this.timeouts.troll_img = setTimeout(function () {
-                app.bruh_img = img;
+                app.bruh_img = 'stickfigure.png';
                 app.timeouts.troll_img = false;
             }, 250);
             this.tick();
@@ -144,18 +141,18 @@ const app = new Vue({
 		this.multiplier -= 5;
             } else if (promo_code('bruh')) {
                 this.multiplier += 3,
-		this.bruhs *= 0;
+		this.bruhs == 0;
             } else if (promo_code('aut0')) {
                 setInterval(this.bruh, 750)
             } else if (promo_code('faideye')) {
                 this.multiplier += 10,
-		this.bruhs *= 0;
+		this.bruhs == 0;
 	    } else if (promo_code('algebruh moment')) {
 		this.multiplier += 15,
-		this.bruhs *= 0;
+		this.bruhs == 0;
 	    } else if (promo_code('hehe lololololol')) {
 		this.multiplier += 100,
-		this.bruhs *= 0;
+		this.bruhs == 0;
 	    } else if (promo_code('🐟')) {
 		this.multiplier += 4,
 		this.bruhs += 78;
@@ -164,11 +161,6 @@ const app = new Vue({
             }
             this.tick();
         },
-	skin: function () {
-	    if (this.bruhs >= 50) {
-		var img = 'redstick.png';
-	 }
-	},
         buy: function (name) {
             let idle_object = this.idle_bruhes_shop[name];
             if (this.bruhs >= idle_object.cost) {
@@ -216,4 +208,3 @@ function cache() {
     }
     return false;
 }
-
