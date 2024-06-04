@@ -94,7 +94,6 @@ const app = new Vue({
     methods: {
         bruh: function () {
             this.bruhs += this.multiplier;
-	    this.multipler -= this.fight;
             // noinspection JSUnusedGlobalSymbols
             this.bruh_img = 'stickfigurewithtrollface.png';
             if (this.timeouts.troll_img) {
