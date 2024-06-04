@@ -116,7 +116,7 @@ const app = new Vue({
     	fighter: function() {
 		this.bruhs -= this.fight;
 		this.tick()
-	}
+	},
         upgrade_func: function () {
             let cost = this.upgrade.costs[this.upgrade.i];
             if (cost) {
