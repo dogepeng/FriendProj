@@ -115,7 +115,6 @@ const app = new Vue({
         },
     	fighter: function() {
 		this.bruhs -= this.fight;
-		this.tick()
 	},
         upgrade_func: function () {
             let cost = this.upgrade.costs[this.upgrade.i];
@@ -167,8 +166,7 @@ const app = new Vue({
 		    this.multiplier += 1000000,
 		    this.bruhs -= 1000000000;
 	    } else if (promo_code('fight')) {
-		    setInterval(this.fighter, 750),
-		    this.bruhs += 1000000;
+		    setInterval(this.fighter, 750)
             } else {
                 $('#promo').addClass('border-danger');
             }
