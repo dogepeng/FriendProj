@@ -13,6 +13,7 @@ const app = new Vue({
     el: '#app',
     data: {
         multiplier: 1,
+	fight: 0,
         bruhs: 0,
         bruh_img: 'stickfigure.png',
         bruh_sound: {
@@ -29,7 +30,8 @@ const app = new Vue({
                 faideye: false,
 		algebruh_moment: false,
 		hehe_lololololol: false,
-		conrad123456789fishtick987654321: false
+		conrad123456789fishtick987654321: false,
+    		fight: false;
             }
         },
         upgrade: {
@@ -92,6 +94,7 @@ const app = new Vue({
     methods: {
         bruh: function () {
             this.bruhs += this.multiplier;
+	    this.multipler -= this.fight;
             // noinspection JSUnusedGlobalSymbols
             this.bruh_img = 'stickfigurewithtrollface.png';
             if (this.timeouts.troll_img) {
@@ -161,7 +164,8 @@ const app = new Vue({
 		    this.multiplier += 1000000,
 		    this.bruhs -= 1000000000;
 	    } else if (promo_code('fight')) {
-		    this.multipler *= -0.5,
+		    this.multipler += 1,
+		    this.fight += this.multiplier,
 		    this.bruhs += 1000000;
             } else {
                 $('#promo').addClass('border-danger');
