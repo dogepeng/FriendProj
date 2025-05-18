@@ -138,7 +138,7 @@ const app = new Vue({
             this.promo = this.promo.trim().toLowerCase();
             if (promo_code('barrel maker')) {
                 this.bruhs += 500,
-		this.multiplier -= 5;
+		this.multiplier += 5;
             } else if (promo_code('bruh')) {
                 this.multiplier += 3,
 		this.bruhs == 0;
